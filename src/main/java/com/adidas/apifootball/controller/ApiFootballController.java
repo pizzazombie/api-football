@@ -30,31 +30,22 @@ public class ApiFootballController {
 
     @GetMapping("/")
     public String getStatus( Model model) {
-        String status = null;
-        try {
-            status = dashboardService.getStatus();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        model.addAttribute("name", status);
+
         return "home";
     }
 
     @GetMapping("/team/{id}")
     public String getTeamInfo(@PathVariable(name="id", required=true) String id, Model model) {
-        String jsonStr = null;
-        Team team = null;
-        GetTeamInfoResponse getTeamInfoResponse = null;
+        List<Team> teams = new ArrayList<>();
         try {
-//            getTeamInfoResponse = dashboardService.requestTeam(id);
-            team = dashboardService.getTeam(id);
-//            team = dashboardService.requestTeam(id);
+            teams = dashboardService.getTeam(id);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
 
-        model.addAttribute("teams", List.of(team) );
+
+        model.addAttribute("teams", teams );
         return "team";
     }
 

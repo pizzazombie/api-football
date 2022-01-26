@@ -1,9 +1,6 @@
 package com.adidas.apifootball.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.json.JSONObject;
 
@@ -16,6 +13,7 @@ public class Team {
     long founded;
     boolean national;
     String logo;
+    String name;
 
     public Team(JSONObject jsonTeam) {
 
@@ -28,6 +26,8 @@ public class Team {
             this.national = jsonTeam.getBoolean("national");
         if (jsonTeam.get("logo") != null)
             this.logo = jsonTeam.getString("logo");
+        if (jsonTeam.get("name") != null)
+            this.name = jsonTeam.getString("name");
 
     }
 
@@ -35,19 +35,24 @@ public class Team {
     public long getId() {
         return id;
     }
+
     public String getCountry() {
         return country;
     }
+
     public long getFounded() {
         return founded;
     }
+
     public boolean isNational() {
         return national;
     }
+
     public String getLogo() {
         return logo;
     }
 
-
-
+    public String getName() {
+        return name;
+    }
 }
