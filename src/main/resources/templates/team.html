@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#" th:text="${status}">Title ...</a>
+<table border="1" style="width:300px">
+<tr th:each="team : ${teams}">
+  <td th:text="${team.getId()}">1</td>
+  <td><a href="#" th:text="${team.getCountry()}">Title ...</a></td>
+  <td th:text="${team.isNational()}">Text ...</td>
+</tr>
+</table>
+</body>
+</html>
