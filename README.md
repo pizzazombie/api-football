@@ -8,20 +8,21 @@ using the https://www.api-football.com/ API
 ## Technologies
 ***
 A list of technologies used within the project:
-* [jdk](https://example.com): Version 15
-* [Spring Boot](https://example.com): Version 2.6.3
-* [Gradle](https://example.com)
-* [Docker](https://example.com)
+* [jdk](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html): Version 15
+* [Spring Boot](https://spring.io/projects/spring-boot): Version 2.6.3
+* [Thymeleaf](https://www.thymeleaf.org/): Version 3.0.14
+* [Gradle](https://gradle.org/): Version 7.3.3
+* [Docker](https://www.docker.com/)
 ## Installation
 Simply clone this repo:
 ```bash
 git clone https://github.com/pizzazombie/api-football.git
 ```
-or use this link for cloning in your IDE.
+or use this repo link for cloning in your IDE.
 
 ## Usage
-Request to dashboard needs and api-football token, so application uses mine, token configured   
-in application.properties file, you can use your own.  
+Request to dashboard needs and api-football token from your account with a format like ``"XxXxXxXxXxXxXxXxXxXxXxXx"``,  
+put it to [application.properties](src/main/resources/application.properties) file.  
 But be attentive, the number of requests to api-football is limited by your account plan
 ### Running 
 You can build and run application directly in your IDE or by gradle and jdk through that steps:
