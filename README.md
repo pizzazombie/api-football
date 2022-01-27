@@ -1,6 +1,7 @@
 ## Api-football client
 ***
-Write down general information about your project. It is a good idea to always put a project status in the readme file. This is where you can add it.
+This is an application that allows you to search for football teams info 
+using the https://www.api-football.com/ API
 ### Screenshot
 ![Image text](src/main/resources/src/homepage.png)
 
@@ -19,7 +20,9 @@ git clone https://github.com/pizzazombie/api-football.git
 or use this link for cloning in your IDE.
 
 ## Usage
-
+Request to dashboard needs and api-football token, so application uses mine, token configured   
+in application.properties file, you can use your own.  
+But be attentive, the number of requests to api-football is limited by your account plan
 ### Running 
 You can build and run application directly in your IDE or by gradle and jdk through that steps:
 
