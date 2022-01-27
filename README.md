@@ -49,6 +49,6 @@ run -p 8090:8090 api-football
 Go to http://localhost:8090/
 
 ## Authors
-Application made by Lev Stakheev (thas's me)   
+Application made by [Lev Stakheev](https://pizzazombie.me/) (thas's me)   
 
-![Image text](src/main/resources/src/2022-01-27 16.44.34.png)
+![Image text](src/main/resources/src/me.png)
