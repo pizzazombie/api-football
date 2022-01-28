@@ -1,6 +1,5 @@
-package com.adidas.apifootball.model;
+package com.adidas.apifootball.entity;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.json.JSONObject;

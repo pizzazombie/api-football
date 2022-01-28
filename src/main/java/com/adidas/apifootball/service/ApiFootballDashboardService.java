@@ -1,6 +1,6 @@
 package com.adidas.apifootball.service;
 
-import com.adidas.apifootball.model.Team;
+import com.adidas.apifootball.entity.Team;
 import java.util.List;
 
 /**

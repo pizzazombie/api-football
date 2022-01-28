@@ -1,19 +1,12 @@
 package com.adidas.apifootball.service.impl;
 
 import com.adidas.apifootball.exception.DashboardException;
-import com.adidas.apifootball.model.Team;
+import com.adidas.apifootball.entity.Team;
 import com.adidas.apifootball.service.ApiFootballDashboardService;
 import com.adidas.apifootball.service.DashboardClient;
 import com.google.gson.Gson;
-import okhttp3.Call;
-import okhttp3.FormBody;
-import okhttp3.HttpUrl;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,7 +15,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.ExecutionException;
 import java.util.logging.Logger;
 
 @Service

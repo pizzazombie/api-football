@@ -1,7 +1,7 @@
 package com.adidas.apifootball.controller;
 
 import com.adidas.apifootball.exception.DashboardException;
-import com.adidas.apifootball.model.Team;
+import com.adidas.apifootball.entity.Team;
 import com.adidas.apifootball.service.ApiFootballDashboardService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
