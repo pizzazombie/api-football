@@ -10,7 +10,7 @@
 <form th:action="@{/team/search}" method="get">
     <div class="form-group">
         <h1 >Search information about team</h1>
-        <input class="form-control" type="text" name="name" id="name" required placeholder="Type here team name or country, for example, Munchen">
+        <input class="form-control" type="text" name="name" id="name" required placeholder="Type here team name or country, for example, Munchen" th:value="${request}">
     </div>
 
     <input type="submit" class="btn btn-primary">    </input>
@@ -39,6 +39,9 @@
 </table>
 <div th:object="${teams}" th:if="${teams.isEmpty()}">
     <h2>No results found for this query</h2>
+</div>
+<div th:object="${error}" >
+    <h2 th:text="${error}"></h2>
 </div>
 
 

@@ -1,7 +1,12 @@
 package com.adidas.apifootball.model;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.json.JSONObject;
 
+@Getter
+@Setter
 public class Team {
 
     long id;
